@@ -39,7 +39,7 @@ Se tomará un enfoque particular en configurar un entorno para la compilación y
 
 \pagebreak
 
-## Introducción
+## Introducción al lenguaje
 
 C es un lenguaje de programación multi-propósito utilizado en muchos ambientes y para muchos fines, y dada su versatilidad es uno de los lenguajes más populares actualmente[^1].
 
