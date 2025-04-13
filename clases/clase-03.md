@@ -38,6 +38,7 @@ int // Declara una funcion o variable de tipo entero
 for // Inicia un bucle de tipo 'for'
 #include // Palabra clave para incluir librerias
 return // Declara el valor a devolver de una funcion
+break // Detiene el flujo de estructuras de control
 ```
 
 \pagebreak
@@ -87,8 +88,6 @@ int x = 0; // Establecemos la variable x con valor 0
 
 El uso correcto de los comentarios es esencial para poder crear código legible para las personas que desarrollan herramientas de software, y particularmente en proyectos de desarrollo colaborativo ayudan a definir y dar más información acerca de lo que se realiza en el código. 
 
-A partir de ahora, el código proporcionado tendrá comentarios indicando la función del código que se demuestra.
-
 \pagebreak
 
 # Parte 2: Código
@@ -111,7 +110,7 @@ int main() {
     // dicho valor en la variable 'z'
     int z = x+y;
 
-    // Imprimimos la suma de los dos valores
+    // Imprimir la suma de los dos valores
     printf("La suma de 5 y 10 es %d\n", z);
 
     // Devolvemos el valor 0 a la funcion main()
