@@ -34,7 +34,6 @@ Siguiente se provee un temario general con los temas de cada clase, excluyendo l
 
 ## Clase 4: Estructuras de control
 
-- Introducción
 - Definición
 - Estructuras de control
   - if
