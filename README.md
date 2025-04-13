@@ -48,3 +48,4 @@ Siguiente se provee un temario general con los temas de cada clase, excluyendo l
 Aqui se enlistaran fuentes de información recomendadas para mayor profundidad en temas no vistos o no abarcados en su totalidad en este curso:
 
 - The Book Of C: <https://jsommers.github.io/cbook/index.html>
+- VimTutor: <https://vimschool.netlify.app/introduction/vimtutor/>
