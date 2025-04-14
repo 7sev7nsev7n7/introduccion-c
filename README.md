@@ -54,8 +54,8 @@ Siguiente se provee un temario general con los temas de cada clase, excluyendo l
 
 ## Clase 6: Lógica de programación
 
-- Pseudo-código
 - Seccionar instrucciones
+- Pseudo-código
 
 # Información adicional
 
