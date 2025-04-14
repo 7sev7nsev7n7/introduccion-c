@@ -43,6 +43,20 @@ Siguiente se provee un temario general con los temas de cada clase, excluyendo l
   - while
   - for
 
+## Clase 5: Funciones
+
+- Definición
+  - Sintaxis
+  - Alcance (Scope)
+- Temas importantes
+  - Declaración inicial (Forward Declaration)
+  - Recursión
+
+## Clase 6: Lógica de programación
+
+- Pseudo-código
+- Seccionar instrucciones
+
 # Información adicional
 
 Aqui se enlistaran fuentes de información recomendadas para mayor profundidad en temas no vistos o no abarcados en su totalidad en este curso:
