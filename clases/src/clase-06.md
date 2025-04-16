@@ -17,7 +17,11 @@ colorlinks: true
 
 Al momento de trabajar con lenguajes de programación es común tener datos del mismo tipo y que estén relacionados, por ejemplo un índice de direcciones de memoria o una lista de caracteres en un string. Es por esto que es importante conocer la funcionalidad e implementación de los arreglos en C.
 
-En esta sesión se explorará qué es un arreglo, cómo definirlo y cómo trabajar con ello, así como las partes más técnicas de cómo funcionan.
+De igual modo, se verán conceptos relativos a memoria y cómo funcionan los accesos a memoria en C. No se abarcará manejo de memoria, ya que es un tema mucho más complejo de lo que se puede abarcar en la sesión.
+
+En esta sesión se explorará qué es un arreglo, cómo definirlo y cómo trabajar con ello, así como las partes más técnicas de cómo funcionan. Esto se verá en conjunto com los temas de memoria para tener ejemplos prácticos de cómo funciona la memoria en los programas que se desarrollan.
+
+\pagebreak
 
 # Definición
 
@@ -68,7 +72,7 @@ Toda información que fluye por nuestro programa viaja a traves de la memoria RA
 
 Al asignar memoria para nuestras variables, también debemos asignar el tamaño o espacio que ocupará el dato. Por ejemplo, un valor `int`{.c} ocupará `4`{.c} bytes de memoria, mientras que un `char`{.c} tendrá un tamaño de `1`{.c}. Conociendo esto, si no conocemos en dónde se guardó el dato, o el tipo de dato que se guardó (lo cual podemos saber del tipo de dato) nos será imposible leer y escribir datos a la memoria. De hecho, si se intenta acceder a espacios que no han sido asignados de la manera correcta se obtendrá un error de sistema por violación a espacio de memoria no autorizado.
 
-Al trabajar con variables de cualquier tipo, es importante reconocer que al llamar a una variable lo que realmente se hace es llamar a una dirección de memoria en específico que contiene el valor que se guardó en nuestra variable, y esa dirección se puede conseguir con el operador `&`{.c}:
+Al trabajar con variables de cualquier tipo, es importante reconocer que al llamar a una variable lo que realmente se hace es llamar a una dirección de memoria en específico que contiene el valor que se guardó en nuestra variable, y esa dirección se puede conseguir al preceder el nombre de una variable existente con el operador `&`{.c}:
 
 ```c
 int x = 10;
@@ -86,6 +90,8 @@ La direccion de la variable x es a82a844
 Como se menciona préviamente, las variables ocupan cierto espacio en bytes de memoria. En muchos casos conocer el tamaño en memoria es sencillo, únicamente se requiere conocer el tipo de dato que es para obtener su valor. La instrucción `sizeof()`{.c} devuelve el valor del tamaño en bytes de la variable o valor que recibe como parámetro, lo cual nos ayuda a trabajar con tamaños en memoria.
 
 Utilizando el ejemplo prévio, el valor de `x`{.c} sería de `4`{.c} bytes de memoria, ya que es un valor de tipo `int`{.c}.
+
+\pagebreak
 
 ## Arreglos y memoria
 
@@ -208,3 +214,8 @@ Imprimamos el arreglo al reves
 Conocer cómo funcionan los arreglos en conjunto con la memoria en C forman parte escencial para poder realizar implementaciones de la manera correcta. Entender cómo funciona a nivel estructural un arreglo y saber cómo acceder a sus elementos nos permite crear herramientas que pueden tener muchos usos, y nos permite manejar datos de una manera mucho más óptima a crear una infinidad de variables.
 
 De igual modo, conocer más a profundidad cómo funciona la memoria en C nos permite saber cómo funcionan las computadoras y los programas que ejecutamos en ellas, y así realizar mejores implementaciones de código.
+
+***Tarea opcional***\
+Para el mejor entendimiento de los conceptos tocados en la sesión se recomienda implementarlos en un ejercicio que los utilice. Se recomienda realizar un programa que tome el valor de diez valores y los guarde programáticamente en un arreglo (con un bucle). Seguido de esto, realizar la suma de los valores e imprimir la dirección de cada elemento junto con el valor de la suma de los elementos. Esta actividad ayudará a cimentar mejor las ideas vistas en cuestión de arreglos y memoria.
+
+De igual modo se recomienda investigar los conceptos básicos de los apuntadores, concepto que será muy importante conocer al trabajar con C, y que se podrá revisar a profundidad en sesiones futuras. 
